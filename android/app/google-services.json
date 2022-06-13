@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "368165284861",
+    "firebase_url": "https://yesmk-6aaac-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "yesmk-6aaac",
+    "storage_bucket": "yesmk-6aaac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368165284861:android:738f729a91915122c0c794",
+        "android_client_info": {
+          "package_name": "com.yesmk.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368165284861-it8l7o52dinrra4upl7stlvj0qlpjvon.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMnvmBBjh8uv_CC2ub7_8WxYuru9ZAq68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368165284861-it8l7o52dinrra4upl7stlvj0qlpjvon.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
