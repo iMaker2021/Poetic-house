@@ -88,7 +88,7 @@ class UserProfileHeader extends PureComponent {
     if (user) {
       firebase
         .app()
-        .database('https://yesmk-6aaac-default-rtdb.asia-southeast1.firebasedatabase.app/')
+        .database('https://poetic-house-default-rtdb.asia-southeast1.firebasedatabase.app/')
         .ref('/users/')
         .on('value', (value) => {
           let userData = value.val()

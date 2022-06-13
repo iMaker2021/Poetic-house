@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "368165284861",
-    "firebase_url": "https://yesmk-6aaac-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "yesmk-6aaac",
-    "storage_bucket": "yesmk-6aaac.appspot.com"
+    "project_number": "1050703388790",
+    "project_id": "poetic-house",
+    "storage_bucket": "poetic-house.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:368165284861:android:738f729a91915122c0c794",
+        "mobilesdk_app_id": "1:1050703388790:android:8c72fd5f6118a622217f57",
         "android_client_info": {
-          "package_name": "com.yesmk.app"
+          "package_name": "com.PoeticHouse"
         }
       },
       "oauth_client": [
         {
-          "client_id": "368165284861-it8l7o52dinrra4upl7stlvj0qlpjvon.apps.googleusercontent.com",
+          "client_id": "1050703388790-28bqts673hbe8uf0uucrqqttr83di6gm.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCMnvmBBjh8uv_CC2ub7_8WxYuru9ZAq68"
+          "current_key": "AIzaSyDC1o5tP3XLiHQUsIhAzTD0AIHjs-mXkeo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "368165284861-it8l7o52dinrra4upl7stlvj0qlpjvon.apps.googleusercontent.com",
+              "client_id": "1050703388790-28bqts673hbe8uf0uucrqqttr83di6gm.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

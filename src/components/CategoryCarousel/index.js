@@ -57,7 +57,7 @@ class CategoryCarousel extends Component {
 
     return (
       <View style={slideInnerContainer}>
-        <LinearGradient
+        {/* <LinearGradient
           style={[styles.linearGradient, { width: itemWidth }]}
           colors={["rgba(0,0,0, 0)", "rgba(0, 0, 0, 0.8)"]}
         />
@@ -73,14 +73,14 @@ class CategoryCarousel extends Component {
           <Text numberOfLines={2} style={styles.count}>
             {item.count + " " + Languages.products}
           </Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
     );
   };
 
   render() {
     const { categories } = this.props;
-
+    console.log(categories,'categories')
     return (
       <Carousel
         layout={"stack"}

@@ -144,7 +144,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.yesmk.app"
+        applicationId "com.PoeticHouse"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 30
