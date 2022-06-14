@@ -82,7 +82,7 @@ export const actions = {
           dispatch(actions.fetchProductsFailure(json.message));
         } else {
           for (let i = 0; i < json.length; i++) {
-            json[i].name = json[i].name.replace(/^(<br>)+|(<br>)+$/g, "")
+            json[i].name = json[i].name.replace(/<br>/g, "")
           }
           dispatch({
             type:
@@ -119,7 +119,7 @@ export const actions = {
       dispatch(actions.fetchProductsFailure(json.message));
     } else {
       for (let i = 0; i < json.length; i++) {
-        json[i].name = json[i].name.replace(/^(<br>)+|(<br>)+$/g, "")
+        json[i].name = json[i].name.replace(/<br>/g, "")
       }
       dispatch({
         type: page > 1 ? types.LAYOUT_FETCH_MORE : types.LAYOUT_FETCH_SUCCESS,

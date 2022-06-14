@@ -56,14 +56,14 @@ class ProductItem extends PureComponent {
             ]}>
             <TouchableOpacity onPress={() => onPress({ product })}>
               <Text style={[styles.title, { color: text }]}>
-                {product.name.replace(/^(<br>)+|(<br>)+$/g, "")}
+                {product.name.replace(/<br>/g, "")}
               </Text>
             </TouchableOpacity>
             <View style={styles.priceContainer}>
               <Text style={[styles.price, { color: text }]}>
-                {Tools.getPriceIncludedTaxAmount(product, variation, false, currency).slice(0,1)
-                +
-                Number(Tools.getPriceIncludedTaxAmount(product, variation, false, currency).replace(/[^0-9\.]+/g,"")) * quantity}
+                {Tools.getPriceIncludedTaxAmount(product, variation, false, currency).slice(0, 1)
+                  +
+                  Number(Tools.getPriceIncludedTaxAmount(product, variation, false, currency).replace(/[^0-9\.]+/g, "")) * quantity}
               </Text>
               {variation &&
                 typeof variation.attributes !== "undefined" &&
