@@ -199,7 +199,7 @@ export default {
   showStatusBar: true,
   LogoImage: require("@images/Poetic_House_logo.png"),
   LogoWithText: require("@images/Poetic_House_logo.png"),
-  LogoLoading: require("@images/logo1.jpg"),
+  LogoLoading: require("@images/logo.png"),
 
   showAdmobAds: false,
   AdMob: {
