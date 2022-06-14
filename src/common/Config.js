@@ -197,8 +197,8 @@ export default {
     },
   },
   showStatusBar: true,
-  LogoImage: require("@images/yesmk_shop_icon.png"),
-  LogoWithText: require("@images/yesmk_shop_icon.png"),
+  LogoImage: require("@images/Poetic_House_logo.png"),
+  LogoWithText: require("@images/Poetic_House_logo.png"),
   LogoLoading: require("@images/logo1.jpg"),
 
   showAdmobAds: false,
