@@ -20,7 +20,7 @@ import Button from "@components/Button";
 import { Styles, Languages, Color, withTheme } from "@common";
 import { toast, error, Validate } from "@app/Omni";
 import { Spinner } from "@components";
-import {signUpUserInfo} from "@services/Database"
+import { signUpUserInfo } from "@services/Database"
 
 class SignUpScreen extends Component {
   constructor(props) {
@@ -90,20 +90,18 @@ class SignUpScreen extends Component {
       lastName,
       password: useGeneratePass ? undefined : password,
     };
-    const json = await WPUserAPI.register(user);
-
+    const data = await WPUserAPI.register(user);
+    const json = data.data
     if (json === undefined) {
       return this.stopAndToast(Languages.ServerNotResponse);
     }
 
     if (json.error) {
-      console.log(json.error,'error')
       return this.stopAndToast(json.error);
     }
 
-    if (has(json, "user_id")) {
-      const customer = await WooWorker.getCustomerById(get(json, "user_id"));
-
+    if (has(json, "id")) {
+      const customer = await WooWorker.getCustomerById(get(json, "id"));
       if (customer) {
         this.setState({ isLoading: false });
         login(customer, get(json, "cookie"));

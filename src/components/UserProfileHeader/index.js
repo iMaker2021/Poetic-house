@@ -78,10 +78,10 @@ class UserProfileHeader extends PureComponent {
         console.log(res,'注册会员成功')
         toast('会员注册成功')
         this.setState({isMember:true})
-
+        isMember(true)
       })
       .catch((err) => { console.log(err,'注册会员失败') })
-      isMember(true)
+      
   }
 
   getAvatar(user) {

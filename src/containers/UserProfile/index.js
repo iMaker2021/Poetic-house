@@ -27,7 +27,7 @@ class UserProfile extends PureComponent {
       pushNotification: false,
       modalVisible: false,
       avatar: "",
-      member:false
+      member: false
     };
   }
 
@@ -145,7 +145,7 @@ class UserProfile extends PureComponent {
    * @returns 
    */
   isMember = (isMember) => {
-    this.setState({member:isMember})
+    this.setState({ member: isMember })
   }
 
   /**
@@ -163,7 +163,7 @@ class UserProfile extends PureComponent {
    * 选择头像上传
    */
   selectImg = (user, url) => {
-    const { userProfile } = this.props;
+    const { userProfile, login } = this.props;
     console.log(user, 9999999999999, url)
     let userData = JSON.parse(JSON.stringify(user))
     this.setState({ avatar: url, modalVisible: false })
@@ -176,9 +176,11 @@ class UserProfile extends PureComponent {
       .ref(`/users/${user.id}`)
       .update(data)
       .then(() => {
-        this.props.login(userData, userProfile.token)
+        login(userData, userProfile.token)
       })
       .catch((err) => { console.log(err, '上传失败') })
+      console.log(login,'备份头像')
+    login(userData, userProfile.token)
   }
 
 

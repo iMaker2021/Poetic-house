@@ -75,15 +75,12 @@ function ajax(reqData) {
                     } catch (error) {
                         resolve(this.responseText)
                     }
+                    return
                 } else {
                     console.log('第一次失败')
                     reject(this)
                 }
-            } 
-            // else {
-            //     console.log('第二次失败')
-            //     reject(this)
-            // }
+            }
         }
 
     })
