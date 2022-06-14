@@ -124,12 +124,14 @@ class UserProfile extends PureComponent {
     if (routeName && !isActionSheet) {
       const user = userProfile.user || {};
       const name = Tools.getName(user);
-      if ('MemberCenter' === routeName && Languages.Guest === name) {
-        toast('请登录')
-        return
-      } else if (!this.state.member) {
-        toast('您不是会员，请先注册会员')
-        return
+      if ('MemberCenter' === routeName) {
+        if (Languages.Guest === name) {
+          toast('请登录')
+          return
+        } else if (!this.state.member) {
+          toast('您不是会员，请先注册会员')
+          return
+        }
       }
       navigation.navigate(routeName, item.params);
     }
@@ -179,7 +181,7 @@ class UserProfile extends PureComponent {
         login(userData, userProfile.token)
       })
       .catch((err) => { console.log(err, '上传失败') })
-      console.log(login,'备份头像')
+    console.log(login, '备份头像')
     login(userData, userProfile.token)
   }
 

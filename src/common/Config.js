@@ -33,34 +33,34 @@ export default {
 
   HomeCategories: [
     {
-      category: 17,
+      category: 174,
       image: require("@images/categories_icon/ic_shorts.png"),
       colors: ["#4facfe", "#00f2fe"],
-      label: "briefs",
+      label: "sunscreen",
     },
     {
-      category: 106,
+      category: 175,
       image: require("@images/categories_icon/ic_tshirt.png"),
       colors: ["#43e97b", "#38f9d7"],
-      label: "Men's shirts",
+      label: "facial mask",
     },
     {
-      category: 101,
+      category: 165,
       image: require("@images/categories_icon/ic_panties.png"),
       colors: ["#fa709a", "#fee140"],
-      label: "swim briefs",
+      label: " face wash",
     },
     {
-      category: 104,
+      category: 186,
       image: require("@images/categories_icon/ic_dress.png"),
       colors: ["#7F00FF", "#E100FF"],
-      label: "Beach pants",
+      label: "hand guard",
     },
     {
-      category: 31,
+      category: 147,
       image: require("@images/categories_icon/ic_glasses.png"),
       colors: ["#30cfd0", "#330867"],
-      label: "jumpsuits",
+      label: "shower Gel",
     },
   ],
   HomeCategories_AR: [
@@ -97,34 +97,34 @@ export default {
   ],
   HomeCategories_CN: [
     {
-      category: 17,
+      category: 174,
       image: require("@images/categories_icon/ic_shorts.png"),
       colors: ["#4facfe", "#00f2fe"],
-      label: "三角内裤",
+      label: "防晒",
     },
     {
-      category: 106,
+      category: 175,
       image: require("@images/categories_icon/ic_tshirt.png"),
       colors: ["#43e97b", "#38f9d7"],
-      label: "男士恤衫",
+      label: "面膜",
     },
     {
-      category: 101,
+      category: 165,
       image: require("@images/categories_icon/ic_panties.png"),
       colors: ["#fa709a", "#fee140"],
-      label: "三角泳裤",
+      label: "洁面卸妆",
     },
     {
-      category: 104,
+      category: 186,
       image: require("@images/categories_icon/ic_dress.png"),
       colors: ["#7F00FF", "#E100FF"],
-      label: "沙滩裤",
+      label: "护手",
     },
     {
-      category: 31,
+      category: 147,
       image: require("@images/categories_icon/ic_glasses.png"),
       colors: ["#30cfd0", "#330867"],
-      label: "连体衣",
+      label: "沐浴乳",
     },
   ],
   HomeCategories_TC: [
@@ -215,8 +215,8 @@ export default {
   intro: [
     {
       key: "page1",
-      title: "Welcome to MStore!",
-      text: "Get the hottest fashion by trend and season right on your pocket.",
+      title: "Welcome to Poetic house!",
+      // text: "Get the hottest fashion by trend and season right on your pocket.",
       icon: "ios-basket",
       colors: ["#0FF0B3", "#036ED9"],
     },
