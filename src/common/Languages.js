@@ -333,8 +333,8 @@ export default new LocalizedStrings({
 
     UserProfile: "User Profile",
     LoadMore: "Load More",
-    TShapedPants:'T-shaped pants',
-    BoxerShorts:'Boxer Shorts'
+    TShapedPants:'Anti wrinkle series',
+    BoxerShorts:'WR wax chrysanthemum activating'
   },
   ar: {
     Exit: "خروج",
@@ -960,8 +960,8 @@ export default new LocalizedStrings({
     UserProfile: "用户资料",
     LoadMore: "加载更多",
     AccountInformations: "用户信息",
-    TShapedPants:'丁字内裤',
-    BoxerShorts:'平角内裤',
+    TShapedPants:'抗皱系列',
+    BoxerShorts:'WR蜡菊赋活',
     MemberCenter:"会员中心"
   },
   tc:{}

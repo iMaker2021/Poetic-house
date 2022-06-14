@@ -30,7 +30,7 @@ class TwoColumn extends PureComponent {
         onPress={viewPost}>
         <ImageCache uri={imageURI} style={css.imagePanelTwo} />
         <Text numberOfLines={2} style={[css.nameTwo, { color: text }]}>
-          {title.replace(/^(<br>)+|(<br>)+$/g, "")}
+          {title.replace(/<br>/g, "")}
         </Text>
         <ProductPrice currency={currency} product={product} hideDisCount />
         {/* <WishListIcon product={product} /> */}

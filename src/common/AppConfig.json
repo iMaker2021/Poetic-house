@@ -5,31 +5,31 @@
     },
     {
       "layout": "bannerHigh",
-      "tag": 273
+      "tag": 166
     },
     {
       "imageBanner": "https://mstore.io/wp-content/uploads/2017/11/woman-large.png",
       "layout": "bannerImage",
       "height": 118,
-      "category": 22
+      "category": 176
     },
     {
       "imageBanner": "https://mstore.io/wp-content/uploads/2017/06/man-large.png",
       "layout": "bannerImage",
       "height": 118,
-      "category": 27
+      "category": 106
     },
     {
       "name": "TShapedPants",
       "image": "",
       "layout": "threeColumn",
-      "category": 29
+      "category": 170
     },
     {
       "name": "BoxerShorts",
       "image": "",
       "layout": "twoColumn",
-      "category": 20
+      "category": 117
     }
   ],
   "MainColor": "#000000"
