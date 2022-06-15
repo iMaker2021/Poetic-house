@@ -90,18 +90,20 @@ class SignUpScreen extends Component {
       lastName,
       password: useGeneratePass ? undefined : password,
     };
-    const data = await WPUserAPI.register(user);
-    const json = data.data
+    const json = await WPUserAPI.register(user);
+
     if (json === undefined) {
       return this.stopAndToast(Languages.ServerNotResponse);
     }
 
     if (json.error) {
+      console.log(json.error, 'error')
       return this.stopAndToast(json.error);
     }
 
-    if (has(json, "id")) {
-      const customer = await WooWorker.getCustomerById(get(json, "id"));
+    if (has(json, "user_id")) {
+      const customer = await WooWorker.getCustomerById(get(json, "user_id"));
+
       if (customer) {
         this.setState({ isLoading: false });
         login(customer, get(json, "cookie"));

@@ -166,13 +166,11 @@ class UserProfile extends PureComponent {
    */
   selectImg = (user, url) => {
     const { userProfile, login } = this.props;
-    console.log(user, 9999999999999, url)
     let userData = JSON.parse(JSON.stringify(user))
     this.setState({ avatar: url, modalVisible: false })
     let data = {}
     data = { avatar_url: url }
     userData.avatar_url = url
-    console.log(data, 'dadadadad')
     firebase
       .app().database()
       .ref(`/users/${user.id}`)
@@ -181,26 +179,21 @@ class UserProfile extends PureComponent {
         login(userData, userProfile.token)
       })
       .catch((err) => { console.log(err, '上传失败') })
-    console.log(login, '备份头像')
     login(userData, userProfile.token)
   }
 
 
   render() {
-    console.log(this.state.avatar, 'this.state.avatar')
     const { userProfile, navigation, currency, changeCurrency } = this.props;
-    console.log(userProfile, 'userProfile')
     const user = userProfile.user || {};
     const name = Tools.getName(user);
     const listItem = this._getListItem();
-    console.log(listItem, 'listItem')
     const {
       theme: {
         colors: { background },
         dark,
       },
     } = this.props;
-    console.log(user, 'user')
     return (
       <View style={[styles.container, { backgroundColor: background }]}>
         <ScrollView ref="scrollView">
@@ -289,6 +282,7 @@ function mergeProps(stateProps, dispatchProps, ownProps) {
   const { dispatch } = dispatchProps;
   const { actions: CurrencyActions } = require("@redux/CurrencyRedux");
   const { toggleDarkTheme } = require("@redux/AppRedux");
+  const { actions } = require("@redux/UserRedux");
   return {
     ...ownProps,
     ...stateProps,
@@ -297,19 +291,12 @@ function mergeProps(stateProps, dispatchProps, ownProps) {
     toggleDarkTheme: () => {
       dispatch(toggleDarkTheme());
     },
+    login: (user, token) => dispatch(actions.login(user, token)),
   };
 }
 
-const mapDispatchToProps = (dispatch) => {
-  const { actions } = require("@redux/UserRedux");
-
-  return {
-    login: (user, token) => dispatch(actions.login(user, token)),
-  };
-};
-
 export default connect(
   mapStateToProps,
-  mapDispatchToProps,
+  null,
   mergeProps
 )(withTheme(UserProfile));
