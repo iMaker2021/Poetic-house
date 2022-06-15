@@ -714,7 +714,7 @@ class Detail extends PureComponent {
     const renderTitle = () => (
       <View style={{ justifyContent: "center", marginTop: 6, marginBottom: 8 }}>
         <Text style={[styles.productName, { color: text }]}>
-          {product.name.replace(/^(<br>)+|(<br>)+$/g, "")}
+          {product.name.replace(/<br>/g, "")}
         </Text>
         <View
           style={{

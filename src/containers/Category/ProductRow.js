@@ -67,7 +67,7 @@ class ProductRow extends PureComponent {
         ? product.images[0].src
         : Images.PlaceHolderURL;
     //商品名称
-    const productName = product.name.replace(/^(<br>)+|(<br>)+$/g, "");
+    const productName = product.name.replace(/<br>/g, "");
     return (
       <TouchableOpacity
         activeOpacity={0.9}
